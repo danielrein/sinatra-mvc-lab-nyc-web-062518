@@ -10,6 +10,8 @@ class PigLatinizer
     while !"aeiou".include?(word.chr)
       word = word + word.slice!(0)
     end
+
+    word + "ay"
   end
 
 
