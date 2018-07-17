@@ -6,13 +6,15 @@ class PigLatinizer
     @text = text
   end
 
-  def piglatinize(word)
+  def piglatinize_word(word)
     while !"aeiou".include?(word.chr)
       word = word + word.slice!(0)
     end
 
     word + "ay"
   end
+
+  def
 
 
 
